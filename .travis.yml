@@ -13,6 +13,6 @@ script:
 - pip install -r req/req.txt
 - python smartbiller.py
 - echo "Hello World 1"
-before_install:
-- openssl aes-256-cbc -K $encrypted_d7ba7fdd5565_key -iv $encrypted_d7ba7fdd5565_iv
-  -in syamsul.enc -out syamsul -d
+# before_install:
+# - openssl aes-256-cbc -K $encrypted_d7ba7fdd5565_key -iv $encrypted_d7ba7fdd5565_iv
+#   -in syamsul.enc -out syamsul -d
