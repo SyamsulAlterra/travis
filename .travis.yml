@@ -1,12 +1,18 @@
 language: python
 python:
-  - "3.7"
-
+- '3.7'
 branches:
   only:
-    - travis
-
+  - travis
+jobs:
+  include:
+  - stage: Requirements
+    script:
+    - pip install -r requirements/requirements.txt
 script:
-  - pip install -r req/req.txt
-  - python smartbiller.py
-  - echo "Hello World 1"
+- pip install -r req/req.txt
+- python smartbiller.py
+- echo "Hello World 1"
+before_install:
+- openssl aes-256-cbc -K $encrypted_d7ba7fdd5565_key -iv $encrypted_d7ba7fdd5565_iv
+  -in syamsul.enc -out syamsul -d
