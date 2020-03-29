@@ -7,5 +7,6 @@ branches:
     - travis
 
 script:
+  - pip install -r req/req.txt
   - python smartbiller.py
   - echo "Hello World 1"
