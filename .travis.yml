@@ -2,9 +2,9 @@ language: python
 python:
   - "3.7"
 
-branches:
-  only:
-    - /travis
+# branches:
+#   only:
+#     - /travis
 
 script:
   - python smartbiller.py
