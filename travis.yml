@@ -7,4 +7,5 @@ branches:
     - /travis
 
 script:
-  - echo "Hello World"
+  - python smartbiller.py
+  - echo "Hello World 1"
